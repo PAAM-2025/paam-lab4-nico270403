@@ -140,6 +140,12 @@ class MainActivity : ComponentActivity() {
     private fun setChiuitText(resultText: String?) {
         if(resultText !== null) {
             // TODO 1: Instantiate a new chiuit object then delegate the addition to the [viewModel].
+            val chiuit = Chiuit(
+                timestamp = System.currentTimeMillis(),
+                description = resultText
+            )
+
+            viewModel.addChiuit(resultText)
         }
     }
 
