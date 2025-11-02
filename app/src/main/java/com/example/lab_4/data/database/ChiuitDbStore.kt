@@ -18,7 +18,7 @@ class ChiuitDbStore(private val appDatabase: AppDatabase) : ChiuitRepository {
 
     override fun removeChiuit(chiuit: Chiuit) {
         // TODO 5: Remove the chiuit by invoking the DAO; make sure to use the designated mapper.
-        //appDatabase.chiuitDao().delete(chiuit.toDbModel())
+        appDatabase.chiuitDao().delete(chiuit.toDbModel())
 
     }
 

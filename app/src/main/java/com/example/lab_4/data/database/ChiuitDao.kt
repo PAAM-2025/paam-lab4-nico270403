@@ -16,7 +16,7 @@ interface ChiuitDao {
     fun insert(chiuit: ChiuitEntity)
 
     // TODO 6: Define the delete operation.
-    //@Delete
-    //fun delete(chiuit: ChiuitEntity)
+    @Delete
+    fun delete(chiuit: ChiuitEntity)
 
 }

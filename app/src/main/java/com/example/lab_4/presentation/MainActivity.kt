@@ -105,6 +105,14 @@ class MainActivity : ComponentActivity() {
                 }
             }
             // TODO 4: Add a new button that has the purpose to delete a chiuit.
+            Button(
+                modifier = Modifier
+                    .weight(0.2f)
+                    .padding(4.dp),
+                onClick = { viewModel.removeChiuit(chiuit) }
+            ) {
+                Text("Delete")
+            }
         }
     }
 
